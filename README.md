@@ -198,4 +198,9 @@ Feedstock Maintainers
 =====================
 
 * [@andersy005](https://github.com/andersy005/)
+* [@dcherian](https://github.com/dcherian/)
+* [@jhamman](https://github.com/jhamman/)
+* [@mpiannucci](https://github.com/mpiannucci/)
+* [@paraseba](https://github.com/paraseba/)
+* [@rabernat](https://github.com/rabernat/)
 
