@@ -1,5 +1,5 @@
 {% set name = "icechunk" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -7,12 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/earth-mover/icechunk/archive/refs/tags/v{{ version }}.tar.gz 
-  sha256: 4f3e87623041aecf7a044e1115076e8d543dddc5466a6b8812e29723f70d2e2b
+  url: https://github.com/earth-mover/icechunk/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: da20b63cf25654224ee753f874fd2df4e2b931ab6cc8e68331f8e174f8109d0c
 
 build:
   skip: true  # [py<311 or python_impl == 'pypy']
-  script: 
+  script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - cd icechunk-python
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -26,7 +26,7 @@ requirements:
     - maturin >=1.7,<2.0  # [build_platform != target_platform]
     - cargo-bundle-licenses
   host:
-    - python 
+    - python
     - maturin >=1.7,<2.0
     - poetry-core
     - pip
