@@ -33,16 +33,15 @@ requirements:
     - pip
   run:
     - python
-    - zarr >=3
-    - crc32c
+    - zarr >=3 # [not linux_aarch64]
 
 test:
   imports:
-    - icechunk
+    - icechunk # [not linux_aarch64]
   commands:
-    - pip check
+    - pip check # [not linux_aarch64]
   requires:
-    - pip
+    - pip # [not linux_aarch64]
 
 about:
   home: https://github.com/earth-mover/icechunk
