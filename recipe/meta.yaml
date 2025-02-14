@@ -33,6 +33,8 @@ requirements:
     - pip
   run:
     - python
+    - zarr >=3
+    - crc32c
 
 test:
   imports:
