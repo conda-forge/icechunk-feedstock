@@ -33,7 +33,6 @@ requirements:
     - pip
   run:
     - python
-    - zarr >=3
 
 test:
   imports:
