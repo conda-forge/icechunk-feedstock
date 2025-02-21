@@ -1,5 +1,5 @@
 {% set name = "icechunk" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/earth-mover/icechunk/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: ffaa7c01330479180697c0cf32b886d53789bde249ae0026d20dc97a9e1362fa
+  sha256: 3ad41b90e22b4663f87e3ade3c4e365164113c4f4694985cfe9daa67bb3e6332
 
 build:
   skip: true  # [py<311 or python_impl == 'pypy']
