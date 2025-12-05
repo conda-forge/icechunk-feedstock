@@ -48,6 +48,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_python3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24765&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/icechunk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.14.____cp314" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_aarch64_python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24765&branchName=main">
@@ -66,6 +73,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24765&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/icechunk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.13.____cp313" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_python3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24765&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/icechunk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -90,6 +104,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_python3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24765&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/icechunk-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.14.____cp314" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_arm64_python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24765&branchName=main">
@@ -108,6 +129,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24765&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/icechunk-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.13.____cp313" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24765&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/icechunk-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -131,6 +159,13 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/icechunk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.13.____cp313" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>win_64_python3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24765&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/icechunk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.14.____cp314" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -149,14 +184,14 @@ Current release info
 Installing icechunk
 ===================
 
-Installing `icechunk` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `icechunk` from the `conda-forge/label/icechunk_dev` channel can be achieved by adding `conda-forge/label/icechunk_dev` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/icechunk_dev
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `icechunk` can be installed with `conda`:
+Once the `conda-forge/label/icechunk_dev` channel has been enabled, `icechunk` can be installed with `conda`:
 
 ```
 conda install icechunk
@@ -171,26 +206,26 @@ mamba install icechunk
 It is possible to list all of the versions of `icechunk` available on your platform with `conda`:
 
 ```
-conda search icechunk --channel conda-forge
+conda search icechunk --channel conda-forge/label/icechunk_dev
 ```
 
 or with `mamba`:
 
 ```
-mamba search icechunk --channel conda-forge
+mamba search icechunk --channel conda-forge/label/icechunk_dev
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search icechunk --channel conda-forge
+mamba repoquery search icechunk --channel conda-forge/label/icechunk_dev
 
 # List packages depending on `icechunk`:
-mamba repoquery whoneeds icechunk --channel conda-forge
+mamba repoquery whoneeds icechunk --channel conda-forge/label/icechunk_dev
 
 # List dependencies of `icechunk`:
-mamba repoquery depends icechunk --channel conda-forge
+mamba repoquery depends icechunk --channel conda-forge/label/icechunk_dev
 ```
 
 
