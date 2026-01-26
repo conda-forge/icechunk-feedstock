@@ -264,10 +264,8 @@ Feedstock Maintainers
 * [@andersy005](https://github.com/andersy005/)
 * [@dcherian](https://github.com/dcherian/)
 * [@jhamman](https://github.com/jhamman/)
+* [@li-em](https://github.com/li-em/)
 * [@mpiannucci](https://github.com/mpiannucci/)
 * [@paraseba](https://github.com/paraseba/)
 * [@rabernat](https://github.com/rabernat/)
-
-
-<!-- dummy commit to enable rerendering -->
 
