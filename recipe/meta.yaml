@@ -11,12 +11,12 @@ source:
   sha256: 3405762aa648f46f1bbb762d08e2be3a77c53ae9009489f186dbd92af4a03f52
 
 build:
-  skip: true  # [py<311 or py>313 or python_impl == 'pypy']
+  skip: true  # [py<311 or python_impl == 'pypy']
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - cd icechunk-python
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
