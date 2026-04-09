@@ -16,7 +16,7 @@ build:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - cd icechunk-python
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -33,7 +33,7 @@ requirements:
     - pip
   run:
     - python
-    - zarr >=3  # [not aarch64]
+    - zarr >=3.1  # [not aarch64]
 
 test:
   imports:
