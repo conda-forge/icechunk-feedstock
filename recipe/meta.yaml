@@ -1,5 +1,5 @@
 {% set name = "icechunk" %}
-{% set version = "1.1.21" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/earth-mover/icechunk/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9316e67a11957e7bc907da09836d7e9c280957a8c75178c67d77baf708018e80
+  sha256: 9288a9e3d991fe44c0499d0e5ad993dddb97d6bdac6d9350cdbf99178888f505
 
 build:
-  skip: true  # [py<311 or python_impl == 'pypy']
+  skip: true  # [py<312 or python_impl == 'pypy']
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - cd icechunk-python
