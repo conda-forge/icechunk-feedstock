@@ -33,7 +33,7 @@ requirements:
     - pip
   run:
     - python
-    - zarr >=3  # [not aarch64]
+    - zarr >=3.1  # [not aarch64]
 
 test:
   imports:
