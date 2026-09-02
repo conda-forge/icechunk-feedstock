@@ -2,9 +2,9 @@ schema_version: 1
 
 context:
   name: icechunk
-  version: "2.1.2"
+  version: "2.2.0"
   python_min: "3.12"
-  sha256: 762daf1ece116903b25c66555bc07bf9756de26f2e7d0cdbdb6d69530aa35f82
+  sha256: 50b82ae35064c1f77ef44dcdc77c13164b11c457cb802aafc402402fe4f38010
 
 package:
   name: ${{ name|lower }}
@@ -15,7 +15,7 @@ source:
   sha256: ${{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   skip: is_abi3 and not is_python_min
   script:
     env:
