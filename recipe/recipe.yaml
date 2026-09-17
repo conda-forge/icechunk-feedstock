@@ -2,9 +2,9 @@ schema_version: 1
 
 context:
   name: icechunk
-  version: "2.2.1"
+  version: "2.2.2"
   python_min: "3.12"
-  sha256: 11dcc0c9e7612610d31b559b62f9812dbe2865afe98dd7ddc505e66fbf57cd78
+  sha256: 33ccfd599f395d695038b0671e64aff69081db644d19e62fca1da25343d83e0f
 
 package:
   name: ${{ name|lower }}
