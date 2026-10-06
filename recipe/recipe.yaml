@@ -2,9 +2,9 @@ schema_version: 1
 
 context:
   name: icechunk
-  version: "2.2.2"
+  version: "2.3.0"
   python_min: "3.12"
-  sha256: 33ccfd599f395d695038b0671e64aff69081db644d19e62fca1da25343d83e0f
+  sha256: 9cb98826d5d86412118b9f6ebf9b9495ae5455ccfc184fb0d60545c01b6b7452
 
 package:
   name: ${{ name|lower }}
@@ -32,13 +32,11 @@ build:
 requirements:
   build:
     - if: build_platform != target_platform
-      then: python ${{ python_min }}.*
-    - if: build_platform != target_platform
-      then: cross-python_${{ target_platform }} ${{ python_min }}.*
-    - if: build_platform != target_platform
-      then: crossenv
-    - if: build_platform != target_platform
-      then: maturin >=1.7.0,<2.0
+      then:
+        - python ${{ python_min }}.*
+        - cross-python_${{ target_platform }} ${{ python_min }}.*
+        - crossenv
+        - maturin >=1.7.0,<2.0
     - ${{ stdlib("c") }}
     - ${{ compiler("c") }}
     - ${{ compiler("rust") }}
